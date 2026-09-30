@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Counting down to meeting Cinny Bobo in the USA." />
+    <title>Cinny Bobo — Until We Meet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Nunito:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="/cinny-bobo-countdown/assets/index-Dwy_C5Ph.js"></script>
+    <link rel="stylesheet" crossorigin href="/cinny-bobo-countdown/assets/index-Bidmqx8_.css">
+  </head>
+  <body>
+    <div class="atmosphere" aria-hidden="true">
+      <div class="hearts" id="hearts"></div>
+    </div>
+
+    <main>
+      <section class="hero" aria-labelledby="brand">
+        <h1 id="brand" class="brand">Cinny Bobo</h1>
+        <p class="tagline">Until we meet in the USA</p>
+
+        <div class="countdown" id="countdown" aria-live="polite">
+          <div class="countdown__units" id="countdown-units">
+            <div class="unit">
+              <span class="unit__value" data-unit="days">00</span>
+              <span class="unit__label">days</span>
+            </div>
+            <div class="unit">
+              <span class="unit__value" data-unit="hours">00</span>
+              <span class="unit__label">hours</span>
+            </div>
+            <div class="unit">
+              <span class="unit__value" data-unit="minutes">00</span>
+              <span class="unit__label">minutes</span>
+            </div>
+            <div class="unit">
+              <span class="unit__value" data-unit="seconds">00</span>
+              <span class="unit__label">seconds</span>
+            </div>
+          </div>
+          <p class="countdown__arrived" id="countdown-arrived" hidden>
+            We’re together
+          </p>
+        </div>
+      </section>
+
+      <section class="wall" aria-labelledby="wall-heading">
+        <h2 id="wall-heading" class="wall__title">Our notes</h2>
+        <p class="wall__subtitle">Leave a little something for each other</p>
+
+        <form class="compose" id="message-form">
+          <label class="sr-only" for="message-body">Your message</label>
+          <textarea
+            id="message-body"
+            name="body"
+            rows="3"
+            maxlength="500"
+            placeholder="Write a note…"
+            required
+          ></textarea>
+          <div class="compose__footer">
+            <span class="compose__count" id="char-count" aria-live="polite">0 / 500</span>
+            <button type="submit" class="compose__send" id="send-btn">
+              Send
+            </button>
+          </div>
+          <p class="compose__status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+
+        <ul class="messages" id="messages" aria-live="polite"></ul>
+        <p class="messages__empty" id="messages-empty" hidden>
+          No notes yet — be the first.
+        </p>
+      </section>
+    </main>
+
+  </body>
+</html>
